@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
 app.get('/color', function (req, res) {
     console.log("recieved something");
     res.json(
-        { "color" : Math.random() * 0x000000 } 
+        { "color" : Math.floor(Math.random() * 0xFFFFFF) } 
     );
 })
  
